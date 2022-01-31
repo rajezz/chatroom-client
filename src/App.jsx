@@ -48,7 +48,7 @@ const App = () => {
     }
 	return (
 		<div className="page">
-			<Sidebar userInfo={userInfo} setuserInfo={setUserInfo} googleSignOn={googleSignOn} />
+			<Sidebar userInfo={userInfo} setUserInfo={setUserInfo} googleSignOn={googleSignOn} />
 			<Chatroom userInfo={userInfo} />
 		</div>
 	)

@@ -46,12 +46,23 @@ body * {
 	align-items: center;
 }
 
-.user-info {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
+.input-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
 }
 
+.input-row svg {
+    color: #0e9bff;
+	width: 20px;
+	height: 20px;
+}
+
+.user-info input:disabled {
+	cursor: not-allowed;
+	background-color: rgb(228 240 249);
+}
 .user-info input {
 	border: 2px solid transparent;
 	background-color: #eeeeee;
@@ -62,12 +73,12 @@ body * {
 	transition: all 0.2s ease-in-out;
 }
 
-.user-info input:hover {
+.user-info input:not(:disabled):hover {
 	background-color: #e8e8e8;
 }
 
-.user-info input:focus,
-.user-info input:active {
+.user-info input:not(:disabled):focus,
+.user-info input:not(:disabled):active {
 	outline: none;
 	background-color: #ffffff;
 	border-color: #005aff;
