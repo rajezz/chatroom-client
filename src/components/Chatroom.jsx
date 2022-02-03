@@ -43,6 +43,7 @@ const Chatroom = ({ userInfo }) => {
 						username={userInfo.name}
 						content={message.content}
 						author={message.author}
+						createdAt={message.createdAt}
 					/>
 				))}
 			</div>
